@@ -1,5 +1,6 @@
 package animationGame;
 
+
 public class Vertex {
 	
 	public double x;
