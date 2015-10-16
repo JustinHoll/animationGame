@@ -1,6 +1,5 @@
 package animationGame;
 
-
 public class Vertex {
 	
 	public double x;
@@ -29,6 +28,9 @@ public class Vertex {
 	}
 	public Vertex add(double s){//erzeugt neues Objekt an den Koord + s
 		return new Vertex(x+s, y+s);
+	}
+	public Vertex add(Vertex v){
+		return new Vertex(x+v.x,y+v.y);
 	}
 	public void addMod(double x, double y){
 		x = this.x+x;
