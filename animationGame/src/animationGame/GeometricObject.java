@@ -86,6 +86,7 @@ public class GeometricObject {
 		return v.x >= pos.x && v.x <= pos.x+width
 		&& v.y >= pos.y && v.y <= pos.y+height;
 	}
+	
 	public boolean equals(Object thatObject){
 		if (thatObject instanceof GeometricObject){
 			GeometricObject that = (GeometricObject)thatObject;

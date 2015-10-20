@@ -13,6 +13,6 @@ public class DieQuadrate extends GeometricObject{
 	}
 	@Override
 	public boolean equals(Object that) {
-		 return (that instanceof SimpleOval) && super.equals(that);
+		 return (that instanceof DieQuadrate) && super.equals(that);
 	}
 }
