@@ -1,9 +1,8 @@
 package animationGame;
-import java.awt.Color;
 
-public class PaintableOval extends SimpleOval implements Paintable {
-
-	public PaintableOval(double width, double height, double x, double y){
+public class PaintableRectangle extends SimpleRectangle implements Paintable{
+	
+	public PaintableRectangle(double width, double height, double x, double y) {
 		super(width,height,x,y);
 	}
 
@@ -11,6 +10,4 @@ public class PaintableOval extends SimpleOval implements Paintable {
 		//g.setColor(color);
 		g.fillOval((int)pos.x, (int)pos.y, (int)width, (int)height);
 	}
-	
-	
 }
