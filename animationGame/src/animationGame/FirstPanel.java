@@ -18,6 +18,9 @@ public class FirstPanel extends JPanel {
 	    int[] x4Points = {65, 80, 95, 80};
 	    int[] y4Points = {105, 65, 105, 95};
 	    int n4Points = xPoints.length;
+	    
+	    
+	    
 	
 	@Override public void paintComponent(java.awt.Graphics g){
 		//g.fillRect(30,50,45,80);

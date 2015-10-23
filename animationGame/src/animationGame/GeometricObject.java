@@ -1,15 +1,19 @@
 package animationGame;
 
+import java.awt.Color;
+
 public class GeometricObject {
 	public Vertex pos;
 	public double height;
 	public double width;
 	public int test;
+	public Color color;
 	
-	public GeometricObject(double width, double height, Vertex pos){
+	public GeometricObject(double width, double height, Vertex pos, Color color){
 		this.pos = pos;
 		this.width = width;
 		this.height = height;
+		this.color = color;
 		
 		if(this.width < 0){
 			this.width = -this.width;
@@ -22,12 +26,24 @@ public class GeometricObject {
 		}
 	}
 	
+	public GeometricObject(double width, double height, Color color){
+		this(width, height, new Vertex(0,0), color);
+	}
+	
 	public GeometricObject(double width, double height){
-		this(width, height, new Vertex(0,0));
+		this(width, height, new Vertex(0,0), new Color(0,0,0));
+	}
+	
+	public GeometricObject(double width, double height, Vertex pos){
+		this(width, height, pos, new Color(0,0,0));
+	}
+	
+	public GeometricObject(double width, Color color){
+		this(width, width, color);
 	}
 	
 	public GeometricObject(double width){
-		this(width, width);
+		this(width, width, new Color(0,0,0));
 	}
 	
 	public GeometricObject(){
@@ -35,7 +51,11 @@ public class GeometricObject {
 	}
 	
 	public GeometricObject(Vertex pos){
-		this(0, 0, pos);
+		this(0, 0, pos, new Color(0,0,0));
+	}
+	
+	public GeometricObject(Vertex pos, Color color){
+		this(0, 0, pos, color);
 	}
 
 	public double getWidth(){
