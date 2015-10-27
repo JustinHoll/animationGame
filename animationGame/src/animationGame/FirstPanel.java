@@ -1,4 +1,6 @@
 package animationGame;
+import java.awt.Color;
+
 import javax.swing.*;
 
 public class FirstPanel extends JPanel {
@@ -33,8 +35,7 @@ public class FirstPanel extends JPanel {
 //		g.drawPolygon(x4Points, y4Points, n4Points);
 		
 		//g.drawPolygon(xPoints, yPoints, nPoints);
-		
-		PaintableStar star = new PaintableStar(50, 60);
+		PaintableStar star = new PaintableStar(50, 60, Color.GREEN);
 		star.paintTo(g);
 	}
 	
