@@ -1,11 +1,11 @@
 package animationGame;
 
 public class SimpleStar extends GeometricObject{
-	public SimpleStar(double innerRadius, double outerRadius, int jags, Vertex pos){
-		//super(w,h,pos);
+	public SimpleStar(Vertex pos){
+		super(pos);
 	}
-	public SimpleStar(double innerRadius, double outerRadius, double x, double y, int jags){
-		//super(w,h,(new Vertex(x,y)));
+	public SimpleStar(double x, double y){
+		super(new Vertex(x,y));
 	}
 	@Override 
 	public String toString() {

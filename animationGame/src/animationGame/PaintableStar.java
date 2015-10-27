@@ -2,8 +2,8 @@ package animationGame;
 
 public class PaintableStar extends SimpleStar implements Paintable{
 	
-	public PaintableStar(double innerRadius, double outerRadius, double x, double y, int jags) { //jags = Zacken
-		super(innerRadius,outerRadius,x,y,jags);
+	public PaintableStar(double x, double y) { 
+		super(x,y);
 	}
 
 	public void paintTo(java.awt.Graphics g){
