@@ -32,7 +32,10 @@ public class FirstPanel extends JPanel {
 //		g.drawPolygon(x3Points, y3Points, n3Points);
 //		g.drawPolygon(x4Points, y4Points, n4Points);
 		
-		g.drawPolygon(xPoints, yPoints, nPoints);
+		//g.drawPolygon(xPoints, yPoints, nPoints);
+		
+		PaintableStar star = new PaintableStar(50, 60);
+		star.paintTo(g);
 	}
 	
 	public static void main(String []args){
@@ -41,5 +44,7 @@ public class FirstPanel extends JPanel {
 		f.setSize(400, 250);
 		//f.pack();
 		f.setVisible(true);
+		
+		
 	}
 }

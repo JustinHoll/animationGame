@@ -8,6 +8,8 @@ public class PaintableStar extends SimpleStar implements Paintable{
 
 	public void paintTo(java.awt.Graphics g){
 		//g.setColor(color);
-		g.fillRect((int)pos.x, (int)pos.y, (int)width, (int)height);
+		//g.fillRect((int)pos.x, (int)pos.y, (int)width, (int)height);
+		
+		g.drawPolygon(xPoints, yPoints, nPoints);
 	}
 }
