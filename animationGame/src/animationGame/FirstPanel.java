@@ -19,9 +19,9 @@ public class FirstPanel extends JPanel {
 //	    int[] y4Points = {105, 65, 105, 95};
 //	    int n4Points = xPoints.length;
 //	    
-		int[] xPoints = {30, 80, 95, 110, 160, 115, 130, 95, 65, 78};
-	    int[] yPoints = {60, 58, 8, 58, 60, 80, 120, 90, 120, 78};
-	    int nPoints = xPoints.length;
+//		int[] xPoints = {30, 80, 95, 110, 160, 115, 130, 95, 65, 78};
+//	    int[] yPoints = {60, 58, 8, 58, 60, 80, 120, 90, 120, 78};
+//	    int nPoints = xPoints.length;
 	    
 	
 	@Override public void paintComponent(java.awt.Graphics g){
